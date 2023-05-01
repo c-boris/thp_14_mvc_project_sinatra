@@ -1,0 +1,18 @@
+<html>
+  <center>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip !</h1>
+    <p><a href="/gossips/new/">Créer un nouveau potin</a></p>
+    <br>
+    <p> La liste de tous les potins :</p>
+    <% gossips.each do |gossip| %>
+      <p> <!--lien hypertexte qui pointe vers la page du potin spécifique en utilisant find_index()-->
+        <a href="/gossips/<%= Gossip.find_index(gossip[0], gossip[1]) %>/"><%= gossip[0] %> : <%= gossip[1] %></a>
+      </p>
+    <% end %>
+  </body>
+  </center>
+</html>

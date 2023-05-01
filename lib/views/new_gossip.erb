@@ -1,0 +1,20 @@
+<html>
+  <center>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <h1>Créer un potin</h1>
+    <p>Balance ton potin via le formulaire ci-dessous :</p>
+    <form action='/gossips/new/' method='POST'> <!--définit un formulaire qui envoie une requête POST-->
+      Saisis ici ton nom :  <input type='text' name='gossip_author'/><br/>
+      <br>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/>
+      <br>
+      <input type='submit'/>
+    </form>
+    <br>
+    <p><a href="/">Revenir à l'index</a></p> <!--lien pour revenir à l'index-->
+  </body>
+  </center>
+</html>
